@@ -15,7 +15,19 @@ Apply the frameworks from the book **"Writing for Developers: Blogs that get rea
 - **Consumability:** Ensure the text is scannable with frequent headings, bullet points, and code blocks.
 - **The 80/20 Rule:** For investigative posts, spend 80% of the content on the struggle/process and 20% on the final solution.
 
-## 2. The Seven Patterns (The "Styles")
+## 2. Structural Flow Techniques
+
+Smooth transitions between sections make content scannable yet cohesive:
+
+- **H2→H3 Transitions:** After each H2 heading, write 1-2 sentences that frame the section's purpose before diving into H3 subsections. This "points the topic" so readers know what's coming.
+  - *Example:* "The technical capabilities matter, but timing matters more. Most companies start with OLTP alone—and that's correct. The question is recognizing when your business stage demands adding OLAP."
+
+- **H3→List Introductions:** Before bullet points or numbered lists, write a sentence explaining the core characteristic or context. Don't jump directly from heading to bullets.
+  - *Example:* "OLTP is the foundation of every data architecture. It handles the writes that power your application—every user action, every state change, every business transaction that requires immediate consistency."
+
+These techniques improve both scannability (readers can skim headings) and comprehension (context before details).
+
+## 3. The Seven Patterns (The "Styles")
 
 When the user proposes a topic, identify which of these patterns fits best:
 
@@ -40,7 +52,7 @@ When the user proposes a topic, identify which of these patterns fits best:
 7. **Benchmarks & Test Results:** A data-driven comparison. Focus on methodology, reproducibility, and clear visual charts.
    - *Key techniques:* Methodology section before results; reproducible setup instructions; temper modest results by framing as foundation for future work; acknowledge confounding variables
 
-## 3. Workflow
+## 4. Workflow
 
 ### Phase 1: Planning
 
@@ -59,12 +71,12 @@ Before finalizing, generate:
 - **Metadata:** 3-5 keywords and a 160-character meta description.
 - **Visual Cues:** Suggest where to insert diagrams, flame graphs, or code snippets.
 
-## 4. Interaction Style
+## 5. Interaction Style
 
 - Be a "speedy reviewer."
 - Don't just rewrite the text; explain *why* a change makes it more "consumable" or "intriguing" based on the book's principles.
 
-## 5. Reference Materials
+## 6. Reference Materials
 
 For real-world examples demonstrating each pattern, consult:
 - **`references/pattern-examples.md`** — Analyzed blog posts showing How We Built It, Thoughts on Trends, Bug Hunt patterns with techniques to borrow
