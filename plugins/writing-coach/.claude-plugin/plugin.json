@@ -1,0 +1,5 @@
+{
+  "name": "writing-coach",
+  "version": "1.0.0",
+  "description": "Technical article writing coach based on 'Writing for Developers' by Piotr Sarna & Cynthia Dunlop. Guides users through topic selection, drafting, and reviewing technical articles using 15 writing skills."
+}
