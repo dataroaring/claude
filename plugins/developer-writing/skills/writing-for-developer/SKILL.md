@@ -1,82 +1,126 @@
 ---
-name: writing-for-developer
-description: This skill should be used when the user asks to "write a technical blog post", "create a developer article", "draft a tutorial", "write about a technology", "help me write for developers", "write a bug hunt post", "write a lessons learned post", or needs guidance on writing engaging content for a developer audience.
-version: 1.0.0
+name: Writing for Developers
+description: This skill should be used when the user asks to "write an article", "help me write a blog post", "draft a technical article", "review my article", "check my writing", "improve this draft", "give me writing feedback", "find a topic", "what should I write about", or mentions "writing coach". Provides comprehensive guidance including topic selection, 17 writing skills, and reviewer collaboration from "Writing for Developers" by Piotr Sarna & Cynthia Dunlop.
+version: 2.0.0
 ---
 
-# Developer Blog Specialist
+# Technical Article Writing Coach
 
-Apply the frameworks from the book **"Writing for Developers: Blogs that get read"** by Piotr Sarna and Cynthia Dunlop. The goal is to help developers move from a raw technical idea to a post that is intriguing, educational, and consumable.
+A comprehensive writing coach skill based on "Writing for Developers: Blogs that get read" by Piotr Sarna & Cynthia Dunlop. Guides users through topic selection, drafting, review, and publishing.
 
-## 1. Core Principles (The "Ways")
+## Topic Selection (Before Everything)
 
-- **Clarity over Prose:** Prioritize being understood over being "fancy." Use short sentences and simple words.
-- **Authenticity:** Use the author's natural voice (snarky, reserved, or witty). Avoid "corporate speak."
-- **Consumability:** Ensure the text is scannable with frequent headings, bullet points, and code blocks.
-- **The 80/20 Rule:** For investigative posts, spend 80% of the content on the struggle/process and 20% on the final solution.
+**The 3 Ps Test** - Does your topic meet at least one?
+- **Proud of** - Accomplishments you're eager to show off
+- **Pained by** - Challenges that caused constant headaches
+- **Passionate about** - What gets your blood racing
 
-## 2. Structural Flow Techniques
+If you're not personally proud, pained, or passionate about the topic, the blog post won't yield great results.
 
-Smooth transitions between sections make content scannable yet cohesive:
+See `references/topic-selection.md` for topic idea sources and testing methods.
 
-- **H2→H3 Transitions:** After each H2 heading, write 1-2 sentences that frame the section's purpose before diving into H3 subsections. This "points the topic" so readers know what's coming.
-  - *Example:* "The technical capabilities matter, but timing matters more. Most companies start with OLTP alone—and that's correct. The question is recognizing when your business stage demands adding OLAP."
+## The 15 Core Writing Skills
 
-- **H3→List Introductions:** Before bullet points or numbered lists, write a sentence explaining the core characteristic or context. Don't jump directly from heading to bullets.
-  - *Example:* "OLTP is the foundation of every data architecture. It handles the writes that power your application—every user action, every state change, every business transaction that requires immediate consistency."
+### Pre-Writing Phase
 
-These techniques improve both scannability (readers can skim headings) and comprehension (context before details).
+**1. Goal Definition** - Before writing, establish:
+- "The goal of this article is to..." (never published)
+- "My perspective is interesting because..." (never published)
+- Who is the target reader? What do they already know?
 
-## 3. The Seven Patterns (The "Styles")
+**2. Pattern Selection** - Match content to the right structure:
 
-When the user proposes a topic, identify which of these patterns fits best:
+| Content Type | Pattern |
+|-------------|---------|
+| Finding/fixing a tricky bug | Bug Hunt |
+| Migrating to new language/framework | Rewrote It in X |
+| Significant technical project | How We Built It |
+| Hard-won wisdom from experience | Lessons Learned |
+| Opinion on industry direction | Thoughts on Trends |
+| Educational content with product | Non-markety Product |
+| Performance data/comparisons | Benchmarks |
 
-1. **Bug Hunt:** A detective story. Build tension by describing the symptoms, the failed attempts to fix it, and the final "Aha!" moment.
-   - *Key techniques:* Open with visual evidence of the problem; use timeline as narrative structure; mix personal anecdotes with technical rigor; vivid language ("winter of broken profilers")
+### Writing Phase
 
-2. **We Rewrote It in X:** Explain the move to a new language/framework. Focus on the *why*, the performance gains, and the "roadbumps" encountered.
-   - *Key techniques:* Lead with the pain that forced the change; show before/after metrics; be honest about what broke during migration
+**3. Evidence-Based Claims** - Support every statement with specifics
+**4. Conversational Voice** - Write authentically, not robotically
+**5. Single-Idea Paragraphs** - One idea per paragraph
+**6. Scannability** - Headings, bold key points, lists/tables
+**7. Show Don't Tell** - Code, diagrams, specific numbers
+**8. Actionable Writing** - Don't make reader think
 
-3. **How We Built It:** A deep dive into an architectural achievement. Use "We" (team voice) and include architecture diagrams.
-   - *Key techniques:* Provocative title that delivers on its promise; systematic component walkthrough; state limitations upfront; show genuine enthusiasm ("It's mediocre, but it's mine and I love it")
+See `references/actionable-writing.md` for transforming abstract → actionable.
 
-4. **Lessons Learned:** A humble retrospective on a failure. Focus on what was learned so others don't repeat the mistake.
-   - *Key techniques:* Vulnerability builds trust; specific failure details, not vague admissions; actionable takeaways the reader can apply
+### Review Phase (The 3 F's)
 
-5. **Thoughts on Trends:** A bold, opinionated take on an industry trend. Must be persuasive and backed by experience.
-   - *Key techniques:* Build from fundamentals before critiquing; ground opinions in team experience, not theory; balanced conclusion—don't throw the baby out with the bathwater; conversational humor
+**9. Facts Check** - Is each claim supported by evidence?
+**10. Focus Check** - Does every paragraph advance the goal?
+**11. Flow Check** - Logical progression? Smooth transitions?
+**12. Component Review** - Title, intro, headings, ending, code, visuals
+**13. Pattern-Specific Review** - Apply criteria for chosen pattern
+**14. Pre-Publish Verification** - Links, code, images, metadata
+**15. Self-Review Test** - Would I share this if someone else wrote it?
 
-6. **Non-markety Product Perspective:** Mention a product/tool only as a side effect of solving a real educational problem. No sales fluff.
-   - *Key techniques:* Education first, product as side effect; compare honestly with alternatives; acknowledge where product falls short
+## Human Voice (Avoiding AI-Sounding Writing)
 
-7. **Benchmarks & Test Results:** A data-driven comparison. Focus on methodology, reproducibility, and clear visual charts.
-   - *Key techniques:* Methodology section before results; reproducible setup instructions; temper modest results by framing as foundation for future work; acknowledge confounding variables
+Check for AI red flags:
+- Unusually dense/consistent metaphors
+- Overly flowery, consistently ornate prose
+- Lack of specific technical details
+- Artificial emotional arc
+- **Excessive em dashes (—)** - Classic AI tell
 
-## 4. Workflow
+To sound human:
+- Include specific, idiosyncratic details
+- Admit mistakes, uncertainties, frustrations
+- Let voice vary naturally
+- Include self-deprecating comments
 
-### Phase 1: Planning
+See `references/human-voice.md` for detailed guidance.
 
-- Ask the user for their **Passion** (Why do you care?), **Purpose** (What's the goal?), and **Potential Impact** (Who does this help?).
-- Select the appropriate **Pattern**.
+## Working with Reviewers
 
-### Phase 2: Drafting
+**Selecting reviewers:**
+- Technical reviewer (knows subject matter)
+- Clarity reviewer (unfamiliar with topic)
 
-- Focus on a "Minimum Viable Product" (MVP) draft first.
-- Use the **Fact-Focus-Flow** framework: Ensure technical accuracy (Fact), keep a single central theme (Focus), and ensure smooth transitions (Flow).
+**Preparing reviewers:**
+- Provide background on goal and target reader
+- Specify what feedback you want
 
-### Phase 3: The "Ship It" Checklist
+See `references/working-with-reviewers.md` for detailed guidance.
 
-Before finalizing, generate:
-- **Intriguing Title:** Avoid clickbait; use descriptive hooks.
-- **Metadata:** 3-5 keywords and a 160-character meta description.
-- **Visual Cues:** Suggest where to insert diagrams, flame graphs, or code snippets.
+## Workflow for Writing New Articles
 
-## 5. Interaction Style
+1. **Topic Selection** - Apply the 3 Ps test
+2. **Goal Definition** - Write goal and differentiator sentences
+3. **Pattern Selection** - Match to appropriate pattern
+4. **Draft** - Focus on getting ideas down fast
+5. **Optimize** - Apply the 3 F's (Facts, Focus, Flow)
+6. **Review** - Get feedback from reviewers
+7. **Ship** - Final checks and publish
 
-- Be a "speedy reviewer."
-- Don't just rewrite the text; explain *why* a change makes it more "consumable" or "intriguing" based on the book's principles.
+## Coaching Prompts
 
-## 6. Reference Materials
+**Stuck starting:**
+> "Start with the most interesting technical part. What's the one thing you most want to share?"
 
-For real-world examples demonstrating each pattern, consult:
-- **`references/pattern-examples.md`** — Analyzed blog posts showing How We Built It, Thoughts on Trends, Bug Hunt patterns with techniques to borrow
+**Too much content:**
+> "Go back to your goal statement. Does this paragraph advance that goal? If not, cut it."
+
+**Doubts expertise:**
+> "You're the world's expert on YOUR specific experience. Share what you learned."
+
+## Additional Resources
+
+### Reference Files
+
+- **`references/topic-selection.md`** - The 3 Ps test, topic idea sources
+- **`references/writing-skills-complete.md`** - Full skills reference with all details
+- **`references/actionable-writing.md`** - Transform abstract → actionable
+- **`references/human-voice.md`** - Sound human, not AI-generated
+- **`references/native-english-style.md`** - Sentence optimization, clarity
+- **`references/seo-metadata.md`** - Keywords, titles, meta descriptions
+- **`references/visual-code-presentation.md`** - Headings, images, code
+- **`references/working-with-reviewers.md`** - Selecting and working with reviewers
+- **`references/pattern-examples.md`** - Real-world blog post examples
