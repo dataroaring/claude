@@ -130,12 +130,61 @@ Every meaningful image should have a caption that:
 - **Screenshots** - UI and tool demonstrations
 - **Data visualizations** - Charts, graphs, metrics
 
+### The Lie Factor (Avoiding Deceptive Charts)
+
+From Edward Tufte's "The Visual Display of Quantitative Information" - a critical concept for benchmark and data-driven articles.
+
+**Definition:**
+```
+Lie Factor = (Size of effect shown in graphic) / (Size of effect in data)
+```
+
+A Lie Factor of 1.0 means the graphic accurately represents the data. Above 1.05 or below 0.95 indicates distortion.
+
+**Common Ways Charts Lie:**
+
+| Deception | Example | Fix |
+|-----------|---------|-----|
+| **Truncated Y-axis** | Starting at 90 instead of 0 makes 95 vs 100 look like 2x difference | Start axes at 0 or clearly mark truncation |
+| **3D effects** | Perspective makes front bars look larger | Use flat 2D charts |
+| **Area scaling** | Doubling a circle's radius quadruples its area | Use length, not area, for comparisons |
+| **Cherry-picked timeframes** | Showing only the period where your product won | Show full relevant timeframe |
+| **Missing context** | Showing raw numbers without baselines | Include baseline comparisons |
+
+**Example of Lie Factor:**
+
+Data: Performance improved from 100ms to 80ms (20% improvement)
+
+❌ **Deceptive chart:** Bar heights of 1 inch vs 3 inches (Lie Factor = 3.0)
+✅ **Honest chart:** Bar heights of 5 inches vs 4 inches (Lie Factor = 1.0)
+
+**Checklist for Honest Charts:**
+
+- [ ] Y-axis starts at 0 (or truncation is clearly marked)
+- [ ] No 3D effects that distort perception
+- [ ] Area comparisons use proportional areas
+- [ ] Time periods are representative, not cherry-picked
+- [ ] Both favorable AND unfavorable results shown
+- [ ] Scale is consistent across compared items
+- [ ] Lie Factor is between 0.95 and 1.05
+
+**Why This Matters:**
+
+Engineers are trained to scrutinize data. A deceptive chart will:
+- Destroy your credibility
+- Generate hostile comments
+- Get called out on Hacker News
+- Undermine your entire article
+
+**Reference:** Edward Tufte's "The Visual Display of Quantitative Information" - essential reading for anyone presenting data.
+
 ### What NOT to Do
 
 - Don't use images of code (use actual code blocks)
 - Don't add purely decorative images that don't enhance understanding
 - Don't use low-resolution images that pixelate when displayed
 - Don't use images with text too small to read
+- Don't use charts with Lie Factor > 1.05
 
 ---
 

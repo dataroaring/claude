@@ -381,6 +381,51 @@ A high lard factor (40-60%) on a clunky sentence indicates successful revision.
 
 ---
 
+## Editing Prioritization
+
+**Don't optimize every sentence equally.** Focus your limited editing energy where it matters most.
+
+### Priority 1: Most Prominent Sentences
+
+These are what readers see first and remember longest:
+- **Opening sentence** - Sets the tone for entire article
+- **Introduction paragraph** - Determines if reader continues
+- **First sentence of each section** - Orients readers after heading
+- **Conclusion** - What readers take away
+
+**Rule:** Spend 50% of your editing time on these sentences.
+
+### Priority 2: Most Important Sentences
+
+These carry your key messages:
+- **Key findings** - The "so what" of your article
+- **Recommendations** - What you want readers to do
+- **Surprising claims** - Where readers will be skeptical
+- **Technical explanations** - Where clarity is critical
+
+### Priority 3: Most Muddled Sentences
+
+These actively confuse readers:
+- Sentences you re-read while writing
+- Sentences with 3+ prepositional phrases
+- Sentences where you're not sure what you meant
+- Anything a reviewer flagged as unclear
+
+### What to Skip
+
+**Don't over-engineer:**
+- Supporting examples (if the point is clear)
+- Transitional sentences (if flow is okay)
+- Background context (if it's accurate enough)
+
+**Aim for "good enough"** - Perfection is the enemy of publication. A slightly awkward sentence in paragraph 7 won't kill your article, but spending hours polishing it might kill your motivation.
+
+### The 80/20 Rule for Editing
+
+80% of your article's impact comes from 20% of its sentences. Find that 20% and make it excellent. Let the rest be merely good.
+
+---
+
 ## Process for Sentence Optimization
 
 1. **Target** - Flag sentences that are long, clunky, or unclear
