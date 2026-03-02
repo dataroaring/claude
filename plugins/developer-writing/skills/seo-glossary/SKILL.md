@@ -213,3 +213,4 @@ When mentioning products (e.g., Apache Doris, ClickHouse):
 
 For the original article demonstrating this style:
 - **`references/oltp-vs-olap-example.md`** — Full example of SEO glossary style with all techniques applied
+- **Published version:** [OLTP vs OLAP: A Complete Guide to Database Architecture](https://www.velodb.io/glossary/olap-vs-oltp)
